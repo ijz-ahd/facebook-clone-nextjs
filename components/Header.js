@@ -56,11 +56,11 @@ function Header() {
           height={40}
           layout="fixed"
           onClick={() => signOut()}
-          src={session.user.image}
+          src={session?.user?.image}
           alt=""
         />
         <p className="ml-2 whitespace-nowrap font-semibold pr-3 text-gray-700">
-          {session.user.name}
+          {session?.user?.name}
         </p>
         <ViewGridIcon className="icon" />
         <ChatIcon className="icon" />

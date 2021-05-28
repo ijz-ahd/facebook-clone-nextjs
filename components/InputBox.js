@@ -80,7 +80,7 @@ function InputBox() {
           width={40}
           height={40}
           layout="fixed"
-          src={session.user.image}
+          src={session?.user?.image}
           alt=""
         />
         <form className="flex flex-1" onSubmit={sendPost}>
@@ -89,7 +89,7 @@ function InputBox() {
             ref={inputRef}
             className="rounded-full h-12 bg-gray-100 flex-grow px-5 focus:outline-none"
             placeholder={`What's on your mind ${
-              session.user.name.split(" ")[0]
+              session?.user?.name.split(" ")[0]
             } ?`}
           />
           <button type="submit" hidden></button>
